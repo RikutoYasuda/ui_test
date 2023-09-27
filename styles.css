@@ -70,16 +70,39 @@ input {
 }
 
 /* meal-card のスタイル */
+/* meal-card のスタイル */
 .meal-card {
     background: #f3f3f3;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between; /* カード内の要素を右に揃える */
+    align-items: center; /* カード内の要素を中央に配置 */
+}
+
+/* meal-card内の削除ボタンのスタイル */
+.meal-card button {
+    background: #ff4136; /* ボタンの背景色を指定 */
+    color: #fff; /* テキストカラーを白に設定 */
+    border: none;
+    border-radius: 5px; /* ボーダーラディウスを適用して角を丸くする */
+    padding: 5px 10px; /* パディングを追加 */
+    font-size: 14px; /* フォントサイズを調整 */
+    cursor: pointer;
+    transition: background-color 0.3s; /* ホバー時のアニメーションを追加 */
+}
+
+.meal-card button:hover {
+    background: #d32f2f; /* ホバー時の背景色を変更 */
 }
 
 /* meal-cards のスタイル */
 .meal-cards {
-    text-align: center;
+    text-align: left; /* テキストを左揃え */
+    display: flex;
+    flex-direction: column; /* カードを縦に配置 */
+    justify-content: flex-start; /* カードを左揃え */
+    width: 100%;
 }
