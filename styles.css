@@ -1,0 +1,85 @@
+/* 共通のスタイル */
+.container {
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    height: 50%;
+    width: 60%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    overflow: auto; /* 垂直スクロールを有効にする */
+}
+
+.modal-content-inner {
+    max-height: 100%; /* 垂直スクロールの最大高さを設定 */
+    max-width: 100%; /* 水平スクロールの最大幅を設定 */
+    overflow-x: auto; /* コンテンツが幅を超える場合の水平スクロールを有効にする */
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+input {
+    width: 80%;
+    margin-bottom: 10px;
+    height: 30px; /* テキストインプットの高さを設定 */
+}
+
+/* meal-item のスタイル */
+.meal-item {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.meal-item input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.meal-item button {
+    flex: 0;
+    display: none; /* 削除ボタンを最初は非表示 */
+}
+
+.meal-item:hover button {
+    display: inline; /* ホバー時に削除ボタンを表示 */
+}
+
+/* meal-card のスタイル */
+.meal-card {
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* meal-cards のスタイル */
+.meal-cards {
+    text-align: center;
+}

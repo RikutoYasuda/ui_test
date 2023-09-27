@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>昨日の食事を教えてください</h1>
+        <button id="openModal">食事を登録</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-button">×</button>
+            <div id="mealItems">
+            </div>
+            <button id="completeMeal">完了</button>
+        </div>
+    </div>
+
+    <div id="mealCards" class="meal-cards">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
